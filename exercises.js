@@ -198,7 +198,14 @@ console.log(spareChange(101));
  * Console.log your result.
 */ 
 
-
+function dirty30(one, two, three){
+	if (one+two+three>=30){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(dirty30(11, 12, 13));
 
 /*
  * #10
@@ -212,8 +219,16 @@ console.log(spareChange(101));
  * Console.log your result.
 */ 
 
+//NOTE: be sure to ask about the answer to this one...//
 
-
+function evenStevens(num){
+	if (num%2===0){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(evenStevens(3));
 
 /*
  * #11
@@ -228,7 +243,14 @@ console.log(spareChange(101));
  * Console.log your result.
 */ 
 
-
+function daClub(cover,age){
+	if (cover>=21 && age>=21){
+		return "Welcome to the Legends Lounge.";
+	}else{
+		return "Chuck E Cheese is acroos the street";
+	}
+}
+console.log(daClub(19, 21));
 /*
  * #12
  * Function - graduation
@@ -242,7 +264,14 @@ console.log(spareChange(101));
  * Console.log your result.
 */ 
 
-
+function graduation(credits, thesis){
+	if (credits>=120||thesis>=120){
+		return "Congratulations on a job well done.";
+	}else{
+		return "See you in summer school.";
+	}
+}
+console.log(graduation(100,120));
 
 /*
  * #13
@@ -255,6 +284,21 @@ console.log(spareChange(101));
  * The function will return the message: "You are riding Honolulu's Rail.", if the number value is less than 50, otherwise it will return the message: "You are riding an Amtrak.", if the number value is less than 100, and return the message: "Now you ballin' in the Shinkansen!", if the number value is greater than or equal to 100.
  * Console.log your result.
 */ 
+
+function moneyTrain(speed){
+		if (speed<50){
+		console.log("You are riding Honolulu's Rail.");
+		}
+		if (speed>=50&&speed<=100){
+		console.log("You are riding an Amtrak");
+			}			
+			if (speed>=100){
+			console.log("Now you ballin' in the Shinkansen!");
+	}
+}
+moneyTrain(150);
+moneyTrain(25);
+moneyTrain(70);
 
 
 /*
