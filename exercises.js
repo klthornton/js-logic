@@ -132,6 +132,15 @@ console.log(bigBird("dog"));
  * Console.log your result.
 */
 
+function isEqual (first, second){
+	if (first===second){
+		return "You look Mahvelous!"; 
+	}else{
+		return "I don't know who you are anymore.";
+	}
+}
+console.log(isEqual("You are lovely", "You are old"));
+console.log(isEqual("You are pretty", "You are pretty"));
 
 /*
  * #7
