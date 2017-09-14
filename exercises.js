@@ -155,7 +155,15 @@ console.log(isEqual("You are pretty", "You are pretty"));
  * Console.log your result.
 */
 
-
+function notEqual(first,second){
+	if (first!==second){
+		return "Opposites do attract.";
+	}else{
+		return "Cause it's like you're my mirror.";
+	}
+}
+console.log(notEqual("Justin", "Timberlake"));
+console.log(notEqual("Justin", "Justin"));
 /*
  * #8
  * Function - spareChange
