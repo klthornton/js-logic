@@ -28,8 +28,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  *
  * The function will return true if the number passed into the function is equal to or greater than Hawaii's voting age. Console.log your result.
 */
-
-
+ function canVote(age){
+ 	if (age >= 21){
+ 		return true;
+ 	}else{
+ 		return false;
+ 	}
+ }
+console.log(canVote(20));
 /*
  * #2
  * Function - login
@@ -41,7 +47,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return the message: "Login Success!", if the string passed into the function is "test1234"
  * Console.log your result.
 */
-
+function login(password){
+	if (password === "test1234"){
+		return "Login Success!";
+	}else{
+		return "Incorrect - Try Again";
+	}
+}
+console.log(login("test1234"));
 
 /*
  * #3
@@ -56,7 +69,14 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
-
+function isGreaterThan(first, second){
+	if (first>second){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(isGreaterThan(20,10));
 
 /*
  * #4
@@ -70,6 +90,15 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * Console.log your result.
 */
 
+function mustBeTrue(boo){
+	if (boo===true){
+		return true;
+	}else{
+		return false;
+	}
+}
+console.log(mustBeTrue(3<5));
+console.log(mustBeTrue(5<3));
 
 
 /*
@@ -83,8 +112,12 @@ If/else statements = Evaluates (or checks) a condition. If the condition is true
  * The function will return the message "Word to Big Bird!", if the string passed into the function is a three-letter word. 
  * Console.log your result.
 */
-
-
+function bigBird (word){
+	if (word.length===3){
+		return "Word to Big Bird!";
+	}
+}
+console.log(bigBird("dog"));
 
 /*
  * #6
